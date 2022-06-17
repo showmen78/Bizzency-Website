@@ -1,0 +1,697 @@
+/* 
+***************************global class******************************* */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color:white; */
+    overflow-x: hidden;
+}
+:root{
+    --blue-color:#0f2f44;
+    --yellow-color:#ffe07c;
+    --button-bg:#ffc712;
+    --ubuntu:'Ubuntu', sans-serif;
+    --opensans:'Open Sans', sans-serif;
+    --abril-fatface:'Abril Fatface', cursive;
+
+}
+
+.container {
+    width: 1170px;
+    margin:0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+.heading p{
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 14px;
+    color:var(--blue-color);
+}
+.heading h2{
+    font-family: var(--abril-fatface);
+    font-weight: 400;
+    font-size: 32px;
+    color:var(--blue-color);
+    margin-top: -8px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: var(--button-bg);
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--blue-color);
+    border-radius: 10px;
+}
+
+.btn1{
+    display: inline-block;
+    padding: 13px 22px;
+    background-color: transparent;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color:var(--blue-color);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-left: 20px;
+}
+
+
+/* *************************************top bar section starts******************************** */
+
+.topbar{
+
+    height: 50px;
+    background-color: var(--blue-color);
+    color:white;
+
+}
+.topbar .left,.right{
+    width: 50%;
+    line-height: 50px;
+    font-family: var(--ubuntu);
+    font-size: 16px;
+    font-weight: 400px;
+}
+.topbar .right{
+    text-align: right;
+    right: 0px;
+}
+
+
+/* *************************************top bar section end******************************** */
+
+/* *********************************navbar starts here************************************* */
+
+nav .logo{
+  width:30%;
+
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+   
+    
+}
+nav .menu ul{
+    text-align: right;
+ 
+}
+nav .menu ul li {
+   
+    display: inline-block;
+    padding:38px 10px;
+  
+   
+
+}
+nav .menu ul li:last-child{
+   
+    padding-right: 0;
+}
+
+nav .menu ul li a{
+    color:#222222;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size:16px;
+  
+}
+nav .menu ul li img{
+    display: inline-block;
+    font-size: 16px;
+    transform: translateY(25%);
+   
+}
+
+nav .menu ul li:hover{
+    background-color: #fff9e6;
+   
+}
+nav .menu ul li:hover a{
+    color:var(--button-bg);
+}
+
+
+/* **************************herosection starts here*********************************** */
+
+#herosection{
+    background-image: url(./img/hero-background.jpg);
+    background-size: cover;
+}
+/* #herosection img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  
+} */
+#herosection .element{
+    padding:143px 0;
+    width: 460px;
+ 
+
+}
+#herosection .element h2{
+ 
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 50px;
+    color:#0f2f44;
+   
+}
+#herosection .element h1{
+ 
+    font-family: var(--abril-fatface);
+    font-weight: 400;
+    font-size: 80px;
+    color:#0f2f44;
+    margin-top: -20px;
+}
+
+#herosection .element h4{
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    font-size:32px;
+    color:#8484bf;
+    letter-spacing: 10px;
+    margin-top: -10px;
+}
+
+#herosection .element p{
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 14px;
+    color:#444444;
+    margin-top: 32px;
+    margin-bottom: 57px;
+}
+
+#herosection a{
+    padding: 18px 20px;
+    font-family: var(--ubuntu);
+    font-weight: medium;
+    font-size: 20px;
+    background-color:#8484bf ;
+    border-radius: 5px;
+    color:white;
+}
+#herosection #icon{
+    background-color: white;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+#herosection #icon img{
+    transform: scale(1.2);
+}
+
+
+
+
+/* *********************************herosection ends here********************************** */
+
+
+/* ********************************about us starts ***************************** */
+#about-us{
+    color:var(--blue-color);
+    padding: 100px 0;
+}
+#about-us .content{
+    width: 60%;
+    padding-right: 50px;
+   
+}
+#about-us .image {
+    width: 40%;
+}
+#about-us .image img{
+    width: 100%;
+}
+
+#about-us .content p{
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 33px;
+    
+  
+}
+#about-us .content ul {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#about-us .content ul li{
+    margin-top: -20px;
+}
+
+/* ********************************about us ends ***************************** */
+
+/* ***************************our skills starts here*************************** */
+#skill{
+    padding-bottom: 100px;
+}
+#skill .image{
+    width: 50%;
+
+}
+#skill .image img{
+    width: 100%;
+}
+#skill .content{
+    width: 50%;
+   text-align: right; 
+}
+#skill .content .row{
+ justify-content: flex-end; 
+    align-items: center;
+    /* margin-top: 50px; */
+}
+
+#skill .content .p-bar{
+    width: 88%;
+    margin-right: 2%;
+
+}
+
+#skill .content .p-icon{
+    width: 10%;
+    padding: 5px 0;
+    background-color: #e0dddd94;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  
+    text-align: center;
+   
+
+}
+#skill .heading  h2{
+    margin-bottom: 20px;
+}
+#skill .desc {
+    padding-left: 100px;
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 50px;
+}  
+
+
+
+/* ***************************our skills ends here*************************** */
+
+
+/* *******************************services starts here ************************* */
+#services{
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#services .row {
+    justify-content: space-between;
+}
+
+#services .card-wrapper{
+    width: 32%;
+   
+   position: relative;
+    margin-top: 56px;
+    height: fit-content;
+ 
+   
+}
+#services .card-wrapper .card{
+    background-color: #e9e9e9;
+    margin: 30px 0px;
+    position: relative;
+    border-radius: 5px;
+    
+   
+}
+
+#services .card-wrapper .card .c-image {
+    width: 30%;
+    
+    height: 100%;
+   
+}
+#services .card-wrapper .card .c-desc{
+    width: 70%;
+    text-align: left;
+    background-color: #eeeeee;
+    padding:28px 20px
+
+}
+#services .card-wrapper .card .c-desc h3{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color:#222222;
+    margin-bottom: 22px;
+}
+#services .card-wrapper .card .c-desc p{
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 14px;
+    color:#6e6e6e;
+   
+    
+}
+
+#services .card-wrapper .card .overlay{
+    position: absolute;
+    background-color: var(--blue-color);
+    color:white;
+    left:0;
+    bottom: 0;
+    width:100%;
+    padding-top: 25px;
+    border-radius: 5px;
+    transform-origin: bottom;
+    font-family: var(--ubuntu);
+    font-weight: 00;
+    font-size: 20px;
+   
+ 
+    height: 0;
+    visibility: hidden;
+    transition: .2s ease-in-out;
+    overflow: hidden;
+   
+}
+.card-wrapper .card .overlay h3{
+    margin-top: 20px;
+}
+
+#services .card-wrapper:hover .card .overlay{
+    visibility: visible;
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    height: 100%;
+}
+
+.card-wrapper span{
+    position: absolute;
+    bottom: 5px;
+    transform: translateX(-50%);
+    transition: .1s ease;
+    visibility: hidden;
+    
+}
+.card-wrapper:hover span{
+    visibility: visible;
+}
+
+
+/* *******************************services ends here ************************* */
+
+
+/* ***************************folio starts here******************************* */
+
+#folio{
+    text-align: center;
+
+    padding:100px 0px;
+}
+#folio .row{
+    justify-content: space-between;
+}
+
+#folio .card {
+    width: 30%;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 60px 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#folio .title{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    padding:33px 0;
+    bottom: 0;
+    font-family: var(--ubuntu);
+    font-weight: 500 !important;
+    font-size: 20px;
+    color:var(--blue-color);
+    transform-origin: bottom;
+    visibility: hidden;
+   
+    opacity: 0;
+    transition: .3s ;
+   
+   
+}
+
+#folio .card:hover .title{
+
+    visibility: visible;
+    opacity: 1;
+  
+}
+
+
+
+
+/* ***************************folio ends here******************************* */
+
+/* ******************************testimonial starts here*********************** */
+
+#testimonial{
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+
+#testimonial .card{
+    width: 49%;
+    margin-top: 60px;
+    border-radius: 5px;
+  
+}
+#testimonial .card .img{
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#testimonial .card .ctn{
+    padding: 30px 20px;
+    background-color: #e9e9e9;
+    width: 60%;
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    line-height: 23px;
+    color:var(--blue-color)
+    
+    
+}
+
+#testimonial .card .ctn h3{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 30px;
+}
+#testimonial .card .ctn h5{
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    font-size: 16px;
+}
+/* ******************************testimonial ends here*********************** */
+
+/* **********************************blog start here ************************* */
+
+#blog{
+    text-align:center;
+    padding: 100px 0;
+    color:white;
+  
+}
+#blog .container{
+    overflow: hidden;
+}
+#blog .card{
+    width:31%;
+    background-color:#f5f5f5;
+    padding:20px;
+    text-align: left;
+    margin-top: 68px;
+    margin-bottom: 60px;
+  
+}
+
+
+
+
+#blog .card .blog-img{
+    width: 100%;
+}
+#blog .card p{
+    font-family: var(--ubuntu);
+    font-weight: 400;
+    font-size: 14px;
+    color:#959595;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+#blog .card h3{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    color:#222222;
+    margin-bottom: 30px;
+}
+#blog .card a{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 16px;
+    color:#777777;
+}
+
+#blog .card:hover{
+    background-color: var(--blue-color);
+     
+}
+#blog .card:hover p{
+    color:white;
+
+}
+#blog .card:hover h3{
+    color:white;
+
+}
+#blog .card:hover a{
+    color:white;
+
+}
+
+
+/* **********************************blog ends here ************************* */
+
+/* *********************************footer starts here ************************* */
+
+#footer{
+ 
+  background-color: white;
+  position: relative;
+  padding-top: 20px;
+ 
+
+}
+#footer .up{
+   left: 50%;
+   transform: translateX(-50%);
+   transform: rotate(-90deg);
+   top:0px;
+    position: absolute;
+}
+#footer .info {
+    padding: 100px 0 60px 0;
+  background-color: #f5f5f5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#footer h3{
+    font-family: var(--ubuntu);
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#footer p{
+    font-family: var(--opensans);
+    font-weight: 400;
+    font-size: 14px;
+    color:#9e9e9e;
+   
+
+}
+#footer .logo{
+    width: 25%;
+    padding-right: 20px;
+
+}
+#footer .contact{
+    width: 25%;
+}
+#footer .links{
+    width: 15%;
+}
+#footer .image{
+    width: 35%;
+}
+#footer .logo p{
+    margin: 30px 0;
+}
+#footer .logo a{
+    margin-right: 10px;
+   
+}
+#footer .logo a img:hover{
+    background-color: #0f2f44d0;
+    border-radius: 50%;
+    
+}
+
+#footer .contact a{
+    width: 10%;
+  
+    
+}
+#footer .contact p{
+    width: 90%;
+}
+#footer .contact .row{
+    margin: 30px 0;
+}
+
+#footer .links p{
+    color:#434343;
+   margin-bottom: 20px;
+}
+
+#footer .image a{
+    width: 22%;
+    margin-bottom: 30px;
+
+}
+
+#footer .image a img{
+    width: 100%;
+}
+#footer .copyright{
+    padding: 25px 0;
+    text-align: center;
+    color:#777777;
+  
+}
+
+#footer .copyright a{
+    color: var(--button-bg);
+}
+/* *********************************footer ends here ************************* */
